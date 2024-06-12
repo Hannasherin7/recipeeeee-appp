@@ -6,7 +6,7 @@ import { Nav } from './Nav'
 export const View = () => {
     const [data,changeData]=useState([])
   const fetchData=()=>{
-      axios.get("http://localhost:8081/view").then(
+      axios.get("http://localhost:8080/view").then(
           (response)=>{
               changeData(response.data)
           }
